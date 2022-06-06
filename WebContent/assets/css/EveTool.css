@@ -1,0 +1,301 @@
+@CHARSET "UTF-8";
+
+noscript div.Cover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	background-color: #666666;
+	opacity: 0.6;
+	z-index: 10000
+}
+
+noscript div.Message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 200px;
+	
+	margin-top: -100px;
+	margin-left: -225px;
+	
+	border-color: #FF0000;
+	border-style: solid;
+	border-width: 5px;
+	background-color: #FEBFBF;
+	opacity: 1.0;
+	z-index: 10001;
+	
+	text-align: center;
+}
+
+noscript h1 {
+	color: #FF0000;
+}
+
+#Header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.Relitive {
+	position: relative;
+}
+
+#Logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 93px;
+	width: 190px;
+	
+	background-color: #666666;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#Logo .Content, #Title .Content, #SearchBox .Content {
+	top: 0px;
+	height: 83px;
+}
+
+#Title .Content, #SearchBox .Content {
+	margin-top: 0px;
+}
+
+#Title {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	right: 210px;
+	height: 93px;
+	
+	background-color: #666666;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#Title h1 {
+	font-size: large;
+}
+
+#SearchBox {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 93px;
+	with: 200px;
+	
+	background-color: #666666;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#SearchBox h1, #Title h1, #Title h2 {
+	font-size: medium;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#SearchBox h1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#SearchBox dt {
+	display: none;
+}
+
+#SearchBox dd {
+	margin-left: 0px;
+}
+
+#SearchBox dl {
+	margin: 0px;
+}
+
+#SearchBox input, #SearchBox select {
+	width: 180px;
+}
+
+#Leftbar {
+	position: absolute;
+	left: 0px;
+	top: 105px;
+	width: 190px;
+	
+	background-color: #666666;
+	margin-left: 5px;
+}
+
+#Leftbar .Content, #Logo .Content, #Title .Content, #SearchBox .Content, #MainFrame .Content {
+	background-color: #FFFFFF;
+}
+
+#MainFrame {
+	position: absolute;
+	left: 200px;
+	top: 105px;
+	right: 5px;
+	margin-left: 5px;
+	
+	background-color: #666666;
+}
+
+#Footer {
+	margin-top: 2px;
+	color: #444444;
+	font-size: small;
+}
+
+#Footer a {
+	color: #666666;
+}
+
+#Balance h1, #WelcomeBox h1 {
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+	
+	margin-right: 10px;
+	margin-left: 10px;
+	border-bottom-color: #666666;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#WelcomeBox span.limited a {
+	color: orange;
+}
+
+#WelcomeBox span.full a {
+	color: #00FF00;
+}
+
+#Balance span, #WelcomeBox {
+	font-size: small;
+}
+
+#Balance span {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+}
+
+.Content {
+	padding: 5px;;
+}
+
+/*
+	NEED TO FIX THIS. COPPIED FROM http://www.noupe.com/tutorial/drop-down-menu-jquery-css.html
+*/
+
+ul#TopMenu {
+	list-style: none;
+	padding: 0 0px;
+	margin: 0;
+	float: left;
+	width: 190px;
+	font-size: 1.2em;
+}
+ul#TopMenu li {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul#TopMenu li a{
+	padding: 10px 5px;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	width: 166px;
+	background-color: #FFFFFF;
+}
+
+ul#TopMenu .Element {
+	margin-top: 5px;
+}
+
+ul#TopMenu .Element {
+	background-color: #666666;
+	padding: 2px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+}
+
+ul#TopMenu .OpenMenu {
+	padding-right: 0px;
+}
+
+ul#TopMenu .OpenMenu > a {
+	padding-right: 2px;
+}
+
+ul#TopMenu .Element {
+	padding-top: 2px;
+}
+
+ul#TopMenu .TopElement {
+	margin-bottom: 0px;
+}
+
+ul#TopMenu ul li:first-child {
+	margin-top: 0px;
+} 
+
+ul#TopMenu li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+
+ul#TopMenu li ul {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 175px; top: 0px;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 10px;
+	display: none;
+	float: left;
+	width: 170px;
+	border: 2px solid #666666;
+	z-index: 1000;
+}
+ul#TopMenu li ul li{
+	/*margin: 0; padding: 0;*/
+	/*border-top: 1px solid #666666; /*--Create bevel effect--*/
+	/*border-bottom: 1px solid #666666; /*--Create bevel effect--*/
+	clear: both;
+	width: 170px;
+}
+html ul#TopMenu li ul li a {
+	float: left;
+	width: 145px;
+	background: #FFFFFF;
+	padding-left: 20px;
+}
+
+/*html ul#TopMenu li ul li a:hover { / -Hover effect for subnav links--*
+	background: #BBBBBB;
+}*/
+
+ul#TopMenu li ul .borderClean {
+	position: absolute;
+	left: -5px;
+	width: 5px;
+	top: 0px;
+	background-color: white;
+}
+
+ul#TopMenu li ul .bottomCorner {
+	position: absolute;
+	left: -12px;
+	border-top:   2px solid #666666;
+	border-right: 2px solid #666666;
+	width: 10px;
+	height: 10px;
+}

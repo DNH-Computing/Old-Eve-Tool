@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EVETool" default="copy">
+	<target name="copy">
+		<copy todir="WebContent/WEB-INF/classes/nz/net/dnh/evetool"
+				overwrite="true">
+			<fileset dir="src/nz/net/dnh/evetool"
+					includes="*.properties" />
+		</copy>
+	</target>
+</project>
